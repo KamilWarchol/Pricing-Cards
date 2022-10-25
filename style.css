@@ -1,0 +1,240 @@
+body{
+    font-family: 'Oxygen', sans-serif;
+    color: #3c4247;
+    background-color: #fff;
+    margin:0;
+    padding: 0;  
+    border: 0;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 25px;
+    margin-top: 25px;
+}
+.logo{
+    height: 32px;
+    cursor: pointer;
+    margin-right: 140px;
+}
+/*----------------Cześć górna menu--------------*/
+
+/*wyląd głownego menu - ol ------ usunięcie marginesu, paddingu i bulletpointów em to 2razy18 a line height - wyśrodkuje napis bloku napisu*/ 
+#menu{
+    display: flex;
+    align-self: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    height: 3em;
+    line-height: 2em;
+    text-align: center; 
+}
+/*wygląd elementów - li - wszystkich dzieci element - ol - wygląd dla każdego elementu nawigacji na górze*/
+#menu>li{
+    width: 120px;
+}
+#menu>li a{
+    display: block; /*dajemy to zęby wyświetało się w bloku i podświetlal tekst zgodnie z szerokością ramki*/
+    text-decoration: none;         /*text decoration usuwa kolor niebieski i hiperlączę*/
+    color: #4c4d5f;
+}
+#menu>li>ul {
+    box-shadow: 0px 8px 60px rgb(237, 237, 243);
+    width: 340px;
+    padding: 0;
+    margin-top: 15px;
+}
+#menu>li>ul>li {
+    position: relative;
+    display: none;
+    list-style-type: none;
+    text-align: left;
+    padding: 32.5px 35px 0 35px;
+}
+#menu>li:hover>ul>li {
+    display: block;
+}
+#menu>li>ul>li:hover {
+    background-color: #dbdfe2;
+}
+#menu>li>ul>li a{
+    list-style-type: none;
+    font-weight: 600;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+#menu>li>ul>li p{
+    margin: 0;
+    padding-bottom: 32.5px;
+    line-height: 28px;
+    border-bottom: solid #c6dbec;
+    border-width: 1px;
+}
+#menu>li>ul>li>ol{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    left: 100%;                     /*przesuwa wyświetlanie drugiego poziomu listy o 100% */
+    columns: 2; 
+    width: 150%; 
+    margin-top: -11.6875em;              
+}
+#menu>li>ul>li:hover>ol{
+    display: block;
+    background-color: #fff;
+}
+#menu>li>ul>li>ol>li{
+    display: block;
+    height: 100px;
+    padding: 16.5px 15px 16.5px 15px ;
+}
+#menu>li>ul>li>ol>li:hover{
+    display: block;
+    background-color: #dbdfe2;
+}
+#menu>li>ul>li>ol>li a{
+    font-size: 14px;
+    font-weight: 400;
+}
+#menu>li>ul>li>ol>li p{
+    line-height:13px;
+    font-size: 13px;
+    font-weight: 400;
+    border-bottom: 0;
+}
+
+/*Edycja tamplates drugiej częśći*/
+#menu>li>ol{
+    box-shadow: 0px 8px 60px rgb(237, 237, 243);
+    width: 340px;
+    padding: 0;
+    margin-top: 15px;
+}
+#menu>li>ol>li{
+    position: relative;
+    display: none;
+    list-style-type: none;
+    background-color: azure; 
+}
+#menu>li:hover>ol>li{
+    display: block;
+    background-color: #fff;
+}
+#menu>li>ol>li>a{                          /*to jest do głównych templatek*/
+    font-size: 14px;
+    padding: 10px;
+    margin-left: 60px;
+    text-align: left;
+}
+#menu>li>ol>li>ol{                          
+   height: 500px;
+}
+#menu>li>ol>li>ol>li{                          
+    width: 350px;
+}
+#menu>li>ol>li>ol>li>a{                          
+    border: solid;
+    border-width: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    font-size: 12.5px;
+}
+#menu>li>ol>li>ol>li>p{  
+    font-size: 12px;
+    cursor: pointer;
+}
+#menu>li>ol>li>ol>li>a:hover{                          
+    transform: scale(1.02);
+}
+#menu>li>ol>li>ol>li:hover{
+    display: block;
+}
+
+#menu>li>ol>li>ol>li>h4{                          /*nagłówek w 2 części menu*/
+    text-align: left;
+
+}
+#menu>li>ol>li>ol{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+}
+#menu>li>ol>li:hover>ol{
+    display: block;
+    background-color: #fff;
+    left: 100%;
+    height: 364px;
+    
+}
+
+.o1{
+    margin-top: -52px;
+}
+.o2{
+    margin-top: -104px;
+}
+.o3{
+    margin-top: -156px;
+}
+.o4{
+    margin-top: -208px;
+}
+.o5{
+    margin-top: -260px;
+}
+.o6{
+    margin-top: -312px;
+}
+.o7{
+    margin-top: -364px;
+}
+
+
+
+
+
+
+
+/*BUTTONS*/
+
+.btn{
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+}
+.btn1 {
+    width: 70px;
+    height: 25px;
+    color: #00b289;
+    border: solid 1px #00b289;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 15px;
+    line-height: 25px;
+    margin-left: 60px;
+}
+.btn1:hover{
+    background-color:#00b289; 
+    color: #fff;
+}
+.btn2 {
+    width: 120px;
+    height: 35px;
+    background-color: #00b289;
+    color: #fff;
+    border: solid 1px #00b289;
+    border-radius: 5px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-left: 5px;
+}
+.btn2:hover{
+    background-color:#03a17c; 
+}
